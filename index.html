@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mark Froehlich</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <link rel="icon" href="./favicon.ico" type="image/icon" />
+  </head>
+  <body>
+    <div class="hero">
+      <!--Navbar-->
+      <nav class="nav navbar-default navbar-fixed-top navbar-transparent">
+
+        <div class="navbar-header">
+          <a class="navbar-brand" href="" id="home-link">Mark Froehlich</a>
+        </div>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#about" id="about-link">About</a>
+            </li>
+            <li>
+              <a href="#projects" id="projects-link">Projects</a>
+            </li>
+            <li>
+              <a href="" id="resume-link">Resume</a>
+            </li>
+            <li>
+              <a href="" id="contact-link">Contact</a>
+            </li>
+          </ul>
+
+      </nav>
+
+      <!-- Hero Content -->
+      <div class="hero-title">
+        <div class="col-md-10 col-md-offset-1">
+
+          <h1>Web Developer</h1>
+          <h3>Developing the web with my bare hands<br />...and some code</h3>
+
+          <ul class="hero-skills">
+            <li class="html-icon">
+              <div class="icon">
+                <img src="assets/html2.png">
+              </div>
+            </li>
+            <li class="css-icon">
+              <div class="icon">
+                <img src="assets/css2.png">
+              </div>
+            </li>
+            <li class="javascript-icon">
+              <div class="icon">
+                <img src="assets/javascript.png">
+              </div>
+            </li>
+            <li class="angular-icon">
+              <div class="icon">
+                <img src="assets/angular.png">
+              </div>
+            </li>
+            <li class="ruby-icon">
+              <div class="icon">
+                <img src="assets/ruby.png">
+              </div>
+            </li>
+            <li class="rails-icon">
+              <div class="icon">
+                <img src="assets/rails.png">
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container col-md-12" id="about">
+
+      <div class="section-heading">
+        <h2>About</h2>
+      </div>
+
+      <div class="col-md-8 col-md-offset-2">
+        <p>
+          In a world of automation and consumerism, I prefer to make. The sense of accomplishment brought by building something that you and your peers can enjoy is unlike anything else. For me it started with brewing my own beer and woodworking but when I realized the potential of what I could make computer programming I dove in head first. Being able to develop a web application or website that could potentially be seen and used by millions of people is what has driven me to enter the web development field.
+        </p>
+        <h3>What I’ve Done</h3>
+        <p>
+          I’ve spent countless hours on self taught computer programming courses like Codecademy and Khan Academy while also making dummy websites, for instance, for my home brewery Matchstick Brewing Co. But what I’m <em>most</em> proud of is taking the leap toward the full career change by enrolling in a rigorous bootcamp called Bloc. While there I’ve been firming up my knowledge of HTML and CSS while diving deeper into some of the more complicated languages and tools.
+        </p>
+        <h3>What Makes Me... Me</h3>
+        <p>
+          When I’m not programming I’m usually out playing golf or working on my next beer recipe. I’m a huge baseball fan as well and play whenever I get the chance, I love traveling, and I have been recently getting slightly into photography.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="container col-md-12" id="projects">
+
+      <div class="section-heading">
+        <h2>Projects</h2>
+      </div>
+
+      <div class="row project-odd">
+        <div class="col-md-6 col-md-offset-1">
+          <h3>SiteStash</h3>
+          <p>
+            SiteStash is a website bookmarking application built using Ruby on Rails. Users can create bookmarks and their topics and can "like" another users bookmarks.
+          </p>
+          <h4>Technologies Used:</h4>
+          <ul>
+            <li>Ruby on Rails</li>
+            <li>Devise</li>
+            <li>Pundit</li>
+            <li>Faker</li>
+          </ul>
+          <a href="https://github.com/minusthebear02/site-stash" target="_blank" class="btn btn-default">Check it out on Github</a>
+        </div>
+
+        <div class="col-md-4">
+          <img src="assets/sitestash.png" class="img-responsive" />
+        </div>
+
+      </div>
+
+      <div class="row project-even">
+        <div class="col-md-4 col-md-offset-1">
+          <video class="img-responsive" align="center" loop="" autoplay="" controls="">
+            <source src="assets/boombocsdemo.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="col-md-6">
+          <h3>Boombocs</h3>
+          <p>
+            Boombocs is a music player application inspired by Spotify built using AngularJS with full audio controls and a responsive layout.
+          </p>
+          <h4>Technologies Used:</h4>
+          <ul>
+            <li>AngularJS</li>
+            <li>jQuery</li>
+            <li>Buzz</li>
+          </ul>
+          <a href="https://github.com/minusthebear02/boombocs-angular" target="_blank" class="btn btn-default">Check it out on Github</a>
+        </div>
+      </div>
+
+      <div class="row project-odd">
+        <div class="col-md-6 col-md-offset-1">
+          <h3>Bloccit</h3>
+          <p>
+            Bloccit is a Ruby on Rails application that draws upon the simplicity of Reddit giving users the ability to create their own post in a topic while up or down voting their peers' posts. Using an algorithm that takes into account both votes and date created we display the most recent and popular posts at the top of each topic.
+          </p>
+          <h4>Technologies Used:</h4>
+          <ul>
+            <li>Ruby on Rails</li>
+            <li>RSpec</li>
+            <li>BCrypt</li>
+            <li>Bootstrap</li>
+          </ul>
+          <a href="https://github.com/minusthebear02/bloccit" target="_blank" class="btn btn-default">Check it out on Github</a>
+        </div>
+
+        <div class="col-md-4">
+          <img src="assets/bloccit.png" class="img-responsive" />
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>

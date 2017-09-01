@@ -1,0 +1,174 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.hero::before {
+    content: ' ';
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    background-image: url('../assets/hero-image.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.nav {
+  height: 60px;
+  opacity: .9;
+}
+
+.navbar-right {
+  margin-right: 20px;
+}
+
+.nav li a {
+  font-family: 'Lobster';
+  font-size: 20px;
+  color: #CD8987;
+  padding: 20px 15px;
+}
+
+.nav a:hover {
+  color: #CD8987 !important;
+  transition: .4s;
+}
+
+#home-link {
+  font-family: 'Lobster';
+  font-size: 40px;
+  color: #575366;
+  margin: 4px 0 0 10px;
+}
+
+.hero-title {
+  text-align: center;
+  margin-top: 90px;
+  position: relative;
+}
+
+.hero-title h1 {
+  font-size: 150px;
+  font-family: 'Lobster';
+  color: #2070b2;
+}
+
+.hero-title h3 {
+  font-family: 'Raleway';
+  font-weight: bolder;
+  font-size: 30px;
+  color: #575366;
+}
+
+.hero-skills {
+  list-style: none;
+  margin-top: 45px;
+}
+
+.hero-skills li {
+  display: inline;
+  padding: 10px;
+}
+.icon {
+  background-color: #575366;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+}
+
+.icon img {
+  height: 60px;
+  width: 60px;
+  margin-top: 20px;
+}
+
+.section-heading h2 {
+  font-family: 'Lobster';
+  font-size: 90px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#about {
+  background-color: #CD8987;
+  color: white;
+  width: 100%;
+}
+
+#about h3 {
+  font-family: 'Lobster';
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-family: 'Raleway';
+  font-size: 20px;
+  margin: 10px 0 50px;
+}
+
+#projects {
+  background-color: white;
+  width: 100%;
+  color: #575366;
+  font-family: 'Raleway';
+  font-size: 20px;
+}
+
+#projects h2 {
+  color: #CD8987;
+  margin-bottom: 30px;
+}
+
+#projects h3 {
+  font-family: 'Lobster';
+  font-size: 40px;
+}
+
+#projects h4 {
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+#projects img {
+  margin-top: 25px;
+}
+
+#projects video {
+  margin-top: 40px;
+}
+
+#projects .btn {
+  background-color: #575366;
+  color: white;
+  border: none;
+}
+
+#projects .btn:hover {
+  background-color: #CD8987;
+  transition: .4s;
+}
+
+#projects .row {
+  margin: 50px 0;
+}
+
+#projects .project-even {
+  text-align: right;
+}
+
+.project-even ul {
+  direction: rtl;
+}
