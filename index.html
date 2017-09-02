@@ -7,74 +7,86 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
-    <link rel="icon" href="./favicon.ico" type="image/icon" />
+    <link rel="icon" href="./favicon.ico" type="image/icon" />    
   </head>
   <body>
     <div class="hero">
+      
       <!--Navbar-->
       <nav class="nav navbar-default navbar-fixed-top navbar-transparent">
-
-        <div class="navbar-header">
-          <a class="navbar-brand" href="" id="home-link">Mark Froehlich</a>
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>  
+            </button>
+            <a class="navbar-brand" href="" id="home-link">Mark Froehlich</a>
+          </div>
+          
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#projects">Projects</a>
+              </li>
+              <li>
+                <a href="#resume">Resume</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+      
+          </div>
         </div>
-
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <a href="#about" id="about-link">About</a>
-            </li>
-            <li>
-              <a href="#projects" id="projects-link">Projects</a>
-            </li>
-            <li>
-              <a href="" id="resume-link">Resume</a>
-            </li>
-            <li>
-              <a href="" id="contact-link">Contact</a>
-            </li>
-          </ul>
-
       </nav>
+      
 
       <!-- Hero Content -->
       <div class="hero-title">
         <div class="col-md-10 col-md-offset-1">
 
-          <h1>Web Developer</h1>
+          <h1 class="col-md-10 col-md-offset-1">Web Developer</h1>
           <h3>Developing the web with my bare hands<br />...and some code</h3>
 
-          <ul class="hero-skills">
-            <li class="html-icon">
-              <div class="icon">
-                <img src="assets/html2.png">
-              </div>
-            </li>
-            <li class="css-icon">
-              <div class="icon">
-                <img src="assets/css2.png">
-              </div>
-            </li>
-            <li class="javascript-icon">
-              <div class="icon">
-                <img src="assets/javascript.png">
-              </div>
-            </li>
-            <li class="angular-icon">
-              <div class="icon">
-                <img src="assets/angular.png">
-              </div>
-            </li>
-            <li class="ruby-icon">
-              <div class="icon">
-                <img src="assets/ruby.png">
-              </div>
-            </li>
-            <li class="rails-icon">
-              <div class="icon">
-                <img src="assets/rails.png">
-              </div>
-            </li>
-          </ul>
-
+          <div class="hidden">
+            <ul class="hero-skills col-md-10 col-md-offset-1">
+              <li class="html-icon">
+                <div class="icon hidden img-responsive">
+                  <img src="assets/html2.png">
+                </div>
+              </li>
+              <li class="css-icon">
+                <div class="icon hidden img-responsive">
+                  <img src="assets/css2.png">
+                </div>
+              </li>
+              <li class="javascript-icon">
+                <div class="icon hidden img-responsive">
+                  <img src="assets/javascript.png">
+                </div>
+              </li>
+              <li class="angular-icon">
+                <div class="icon hidden img-responsive">
+                  <img src="assets/angular.png">
+                </div>
+              </li>
+              <li class="ruby-icon">
+                <div class="icon hidden img-responsive">
+                  <img src="assets/ruby.png">
+                </div>
+              </li>
+              <li class="rails-icon">
+                <div class="icon hidden img-responsive">
+                  <img src="assets/rails.png">
+                </div>
+              </li>
+            </ul>
+          </div>
+          
         </div>
       </div>
 
@@ -174,5 +186,43 @@
 
       </div>
     </div>
+ 
+    <div class="container col-md-12" id="resume">
+      <div class="section-heading">
+        <h2>Resume</h2>
+      </div>
+      
+      <div class="col-md-8 col-md-offset-2">
+        <img src="assets/resume.jpg" class="img-responsive">
+      </div>
+    </div>
+    
+    <div class="container col-md-12" id="contact">
+      <div class="section-heading">
+        <h2>Contact</h2>
+      </div>
+      <div class="col-md-6 col-md-offset-3">
+        
+        <p>Feel free to contact me if you’d like to collaborate on a project, want to hire me to do some work for you, if you have a question with anything you see here or if you just want to chat. I’m up for anything!</p>
+        
+        <form id="contact-form" method="post" action='https://getsimpleform.com/messages?form_api_token=654f24d1a4144687239cbf93833b0d52'>
+          <input type="hidden" name="redirect_to" value="http://www.markfroehlich.com">
+          
+          <div class="form-group">
+            <input type="text" class="form-control" name="name" placeholder="Your Full Name">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" name="email" placeholder="Your E-mail Address">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="message" placeholder="Write your message ..."></textarea>
+          </div>
+
+          <input type="submit" class="btn btn-primary" value="Send Message">
+        </form>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

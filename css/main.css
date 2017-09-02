@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   overflow: hidden;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .hero::before {
@@ -59,10 +59,24 @@
 }
 
 .hero-title h1 {
-  font-size: 150px;
+  font-size: 90px;
   font-family: 'Lobster';
   color: #2070b2;
 }
+
+@media (min-width: 440px) {
+  .hero-title h1 {
+    font-size: 100px;
+  }
+}
+
+@media (min-width: 800px) {
+  .hero-title h1 {
+    font-size: 130px;
+  }
+}
+
+
 
 .hero-title h3 {
   font-family: 'Raleway';
@@ -74,23 +88,25 @@
 .hero-skills {
   list-style: none;
   margin-top: 45px;
+  margin-bottom: 45px;
 }
 
 .hero-skills li {
   display: inline;
   padding: 10px;
 }
+
 .icon {
   background-color: #575366;
   border-radius: 50%;
-  height: 100px;
-  width: 100px;
-  display: inline-block;
+  height: 95px;
+  width: 95px;
+  display: inline-block !important;
 }
 
 .icon img {
-  height: 60px;
-  width: 60px;
+  height: 55px;
+  width: 55px;
   margin-top: 20px;
 }
 
@@ -162,7 +178,7 @@
 }
 
 #projects .row {
-  margin: 50px 0;
+  margin: 80px 0;
 }
 
 #projects .project-even {
@@ -171,4 +187,46 @@
 
 .project-even ul {
   direction: rtl;
+}
+
+#resume {
+  background-color: #CD8987;
+  color: white;
+  width: 100%;
+}
+
+#resume img {
+  margin: 50px auto 100px;
+  background-color: white;
+}
+
+#contact {
+  background-color: white;
+  color: #CD8987;
+}
+
+#contact p {
+  color: #575366;
+  font-family: 'Raleway';
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#contact form {
+  margin: 50px auto 100px;
+}
+
+#contact .form-control:focus {
+  border: solid 2px #CD8987;
+  box-shadow: none;
+}
+
+#contact .btn {
+  background-color: #575366 !important;
+  border: none !important;
+}
+
+#contact .btn:hover {
+  background-color: #CD8987 !important;
+  transition: .4s !important;
 }
