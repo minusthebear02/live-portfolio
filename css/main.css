@@ -27,10 +27,12 @@
 .nav {
   height: 60px;
   opacity: .9;
+  list-style: armenian;
 }
 
 .navbar-right {
   margin-right: 20px;
+  height: 500px;
 }
 
 .nav li a {
@@ -38,6 +40,8 @@
   font-size: 20px;
   color: #CD8987;
   padding: 20px 15px;
+  text-align: right;
+  background-color: #f8f8f8;
 }
 
 .nav a:hover {
@@ -70,19 +74,18 @@
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .hero-title h1 {
     font-size: 130px;
   }
 }
-
-
 
 .hero-title h3 {
   font-family: 'Raleway';
   font-weight: bolder;
   font-size: 30px;
   color: #575366;
+  margin-top: 20px;
 }
 
 .hero-skills {
