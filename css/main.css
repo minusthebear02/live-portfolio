@@ -25,7 +25,7 @@
 }
 
 .nav {
-  height: 60px;
+  height: 65px;
   opacity: .9;
   list-style: armenian;
 }
@@ -35,18 +35,24 @@
   height: 500px;
 }
 
-.nav li a {
+.navbar-button {
   font-family: 'Lobster';
   font-size: 20px;
+  height: 65px;
   color: #CD8987;
   padding: 20px 15px;
   text-align: right;
   background-color: #f8f8f8;
+  border: none;
 }
 
-.nav a:hover {
-  color: #CD8987 !important;
+.navbar-button:hover {
+  color: #575366 !important;
   transition: .4s;
+}
+
+.navbar-button:focus {
+  outline: none;
 }
 
 #home-link {
@@ -54,6 +60,17 @@
   font-size: 40px;
   color: #575366;
   margin: 4px 0 0 10px;
+  background: none;
+  border: none;
+}
+
+#home-link:hover {
+  color: #CD8987;
+  transition:.4s;
+}
+
+#home-link:focus {
+  outline: none;
 }
 
 .hero-title {

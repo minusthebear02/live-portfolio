@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
-    <link rel="icon" href="./favicon.ico" type="image/icon" />    
+    <link rel="icon" href="./favicon.ico" type="image/icon" />
   </head>
   <body>
-    <div class="hero">
-      
+    <div class="hero" id="home">
+
       <!--Navbar-->
       <nav class="nav navbar-default navbar-fixed-top navbar-transparent">
         <div class="container-fluid">
@@ -19,23 +19,23 @@
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
-              <span class="icon-bar"></span>  
+              <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="" id="home-link">Mark Froehlich</a>
+            <input type="button" class="navbar-brand" id="home-link" value="Mark Froehlich" onclick="scroll_to_div('home')" />
           </div>
-          
+
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#about">About</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#resume">Resume</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><input type="button" class="navbar-button" value="About" onclick="scroll_to_div('about')" /></li>
+              <li><input type="button" class="navbar-button" value="Projects" onclick="scroll_to_div('projects')" /></li>
+              <li><input type="button" class="navbar-button" value="Resume" onclick="scroll_to_div('resume')" /></li>
+              <li><input type="button" class="navbar-button" value="Contact" onclick="scroll_to_div('contact')" /></li>
             </ul>
-      
+
           </div>
         </div>
       </nav>
-      
+
 
       <!-- Hero Content -->
       <div class="hero-title">
@@ -78,7 +78,7 @@
               </li>
             </ul>
           </div>
-          
+
         </div>
       </div>
 
@@ -178,12 +178,12 @@
 
       </div>
     </div>
- 
+
     <div class="container col-md-12" id="resume">
       <div class="section-heading">
         <h2>Resume</h2>
       </div>
-      
+
       <div class="col-md-8 col-md-offset-2 resume-img">
         <p>&or;&or; click to download &or;&or;</p>
         <a href="assets/Mark%20Froehlich%20Resume.pdf" download>
@@ -192,18 +192,18 @@
         <p>&and;&and; click to download &and;&and;</p>
       </div>
     </div>
-    
+
     <div class="container col-md-12" id="contact">
       <div class="section-heading">
         <h2>Contact</h2>
       </div>
       <div class="col-md-6 col-md-offset-3">
-        
+
         <p>Feel free to contact me if you’d like to collaborate on a project, want to hire me to do some work for you, if you have a question with anything you see here or if you just want to chat. I’m up for anything!</p>
-        
+
         <form id="contact-form" method="post" action='https://getsimpleform.com/messages?form_api_token=654f24d1a4144687239cbf93833b0d52'>
           <input type="hidden" name="redirect_to" value="http://www.markfroehlich.com">
-          
+
           <div class="form-group">
             <input type="text" class="form-control" name="name" placeholder="Your Full Name">
           </div>
