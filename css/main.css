@@ -27,7 +27,6 @@
 .nav {
   height: 60px;
   opacity: .9;
-  list-style: armenian;
 }
 
 .navbar-right {
@@ -39,10 +38,7 @@
 .navbar-button {
   font-family: 'Lobster';
   font-size: 20px;
-  height: 55px;
   color: #5C80BC !important;
-  padding: 22px 15px;
-  text-align: right;
   background-color: #f8f8f8;
   border: none;
 }
@@ -57,22 +53,21 @@
   outline: none;
 }
 
-@media (max-width: 690px) {
+@media (max-width: 765px) {
   .navbar-button {
     margin-top: 20px;
     background-color: #575366;
     color: white !important;
   }
+
   .navbar-button:hover {
     background-color: #5C80BC !important;
     color: white !important;
   }
 
   .navbar-nav {
-    display: flex;
     justify-content: flex-end;
-    align-items: center;
-    margin: -10px -20px 0 0;
+    margin: -20px -20px 0 0;
   }
 }
 
@@ -134,8 +129,7 @@
 
 .hero-skills {
   list-style: none;
-  margin-top: 45px;
-  margin-bottom: 45px;
+  margin: 45px 0;
 }
 
 .hero-skills li {
@@ -244,8 +238,8 @@
 }
 
 .resume-img {
-  margin-top: 50px !important;
-  margin-bottom: 100px !important;
+  margin-top: 50px;
+  margin-bottom: 100px;
   text-align: center;
 }
 
@@ -280,11 +274,11 @@
 }
 
 #contact .btn {
-  background-color: #575366 !important;
-  border: none !important;
+  background-color: #575366;
+  border: none;
 }
 
 #contact .btn:hover {
-  background-color: #5C80BC !important;
-  transition: .4s !important;
+  background-color: #5C80BC;
+  transition: .4s;
 }
