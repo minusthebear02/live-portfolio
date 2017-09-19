@@ -25,22 +25,23 @@
 }
 
 .nav {
-  height: 65px;
+  height: 60px;
   opacity: .9;
   list-style: armenian;
 }
 
 .navbar-right {
+  display: flex;
+  align-items: center;
   margin-right: 20px;
-  height: 500px;
 }
 
 .navbar-button {
   font-family: 'Lobster';
   font-size: 20px;
-  height: 65px;
-  color: #CD8987;
-  padding: 20px 15px;
+  height: 55px;
+  color: #5C80BC !important;
+  padding: 22px 15px;
   text-align: right;
   background-color: #f8f8f8;
   border: none;
@@ -49,10 +50,30 @@
 .navbar-button:hover {
   color: #575366 !important;
   transition: .4s;
+  cursor: pointer;
 }
 
 .navbar-button:focus {
   outline: none;
+}
+
+@media (max-width: 690px) {
+  .navbar-button {
+    margin-top: 20px;
+    background-color: #575366;
+    color: white !important;
+  }
+  .navbar-button:hover {
+    background-color: #5C80BC !important;
+    color: white !important;
+  }
+
+  .navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: -10px -20px 0 0;
+  }
 }
 
 #home-link {
@@ -65,7 +86,7 @@
 }
 
 #home-link:hover {
-  color: #CD8987;
+  color: #5C80BC;
   transition:.4s;
 }
 
@@ -75,14 +96,14 @@
 
 .hero-title {
   text-align: center;
-  margin-top: 90px;
+  margin-top: 85px;
   position: relative;
 }
 
 .hero-title h1 {
   font-size: 90px;
   font-family: 'Lobster';
-  color: #2070b2;
+  color: #5C80BC;
 }
 
 @media (min-width: 440px) {
@@ -93,7 +114,7 @@
 
 @media (min-width: 1100px) {
   .hero-title h1 {
-    font-size: 130px;
+    font-size: 150px;
   }
 }
 
@@ -144,9 +165,10 @@
 }
 
 #about {
-  background-color: #CD8987;
+  background-color: #5C80BC;
   color: white;
   width: 100%;
+  padding-bottom: 100px;
 }
 
 #about h3 {
@@ -161,10 +183,6 @@
   margin: 10px 0 50px;
 }
 
-#about p:last-child {
-  margin-bottom: 100px;
-}
-
 #projects {
   background-color: white;
   width: 100%;
@@ -174,7 +192,7 @@
 }
 
 #projects h2 {
-  color: #CD8987;
+  color: #5C80BC;
   margin-bottom: 30px;
 }
 
@@ -203,7 +221,7 @@
 }
 
 #projects .btn:hover {
-  background-color: #CD8987;
+  background-color: #5C80BC;
   transition: .4s;
 }
 
@@ -220,7 +238,7 @@
 }
 
 #resume {
-  background-color: #CD8987;
+  background-color: #5C80BC;
   color: white;
   width: 100%;
 }
@@ -242,7 +260,7 @@
 
 #contact {
   background-color: white;
-  color: #CD8987;
+  color: #5C80BC;
 }
 
 #contact p {
@@ -257,7 +275,7 @@
 }
 
 #contact .form-control:focus {
-  border: solid 2px #CD8987;
+  border: solid 2px #5C80BC;
   box-shadow: none;
 }
 
@@ -267,6 +285,6 @@
 }
 
 #contact .btn:hover {
-  background-color: #CD8987 !important;
+  background-color: #5C80BC !important;
   transition: .4s !important;
 }

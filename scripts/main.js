@@ -8,6 +8,6 @@ $(document).ready(function() {
 
 function scroll_to_div(div_id) {
   $('html,body').animate({
-    scrollTop: $("#"+div_id).offset().top - 65
+    scrollTop: $("#"+div_id).offset().top - 60
   }, 'slow');
-}
+};
