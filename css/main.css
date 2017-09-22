@@ -69,6 +69,10 @@
     justify-content: flex-end;
     margin: -20px -20px 0 0;
   }
+
+  .hero-title {
+    margin-top: 80px !important;
+  }
 }
 
 #home-link {
@@ -91,7 +95,7 @@
 
 .hero-title {
   text-align: center;
-  margin-top: 85px;
+  margin-top: 50px;
   position: relative;
 }
 
@@ -129,7 +133,8 @@
 
 .hero-skills {
   list-style: none;
-  margin: 45px 0;
+  margin-top: 45px;
+  margin-bottom: 45px;
 }
 
 .hero-skills li {
