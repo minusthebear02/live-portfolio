@@ -69,14 +69,6 @@
     justify-content: flex-end;
     margin: -20px -20px 0 0;
   }
-
-  .hero-header{
-    font-size: 140px;
-  }
-
-  #home-link {
-    padding: 15px;
-  }
 }
 
 #home-link {
@@ -121,6 +113,16 @@
   #home-link {
     padding: 0;
     margin: auto;
+  }
+}
+
+@media (min-width: 754px) {
+  .hero-header{
+    font-size: 140px;
+  }
+
+  #home-link {
+    padding: 15px;
   }
 }
 
