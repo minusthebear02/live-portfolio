@@ -8,6 +8,19 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
     <link rel="icon" href="./favicon.ico" type="image/icon" />
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('div.hidden').fadeIn(5000).removeClass('hidden');
+      $('#contact-form').submit(function() {
+        alert("Thanks for reaching out, talk to you soon!");
+      });
+    });
+    function scroll_to_div(div_id) {
+      $('html,body').animate({
+        scrollTop: $("#"+div_id).offset().top - 58
+      }, 'slow');
+    };
+    </script>
   </head>
   <body>
     <div class="hero" id="home">
@@ -212,6 +225,19 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="text/javascript">
+      function downloadJSAtOnload() {
+        var element = document.createElement("script");
+        element.src = "scripts/deferScripts.js";
+
+        document.body.appendChild(element);
+      };
+      if (window.addEventListener)
+        window.addEventListener("load", downloadJSAtOnload, false);
+      else if (window.attachEvent)
+        window.attachEvent("onload", downloadJSAtOnload);
+      else
+        window.onload = downloadJSAtOnload;
+    </script>
   </body>
 </html>
