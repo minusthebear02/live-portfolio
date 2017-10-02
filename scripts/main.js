@@ -1,8 +1,8 @@
 $(document).ready(function() {
-  $('div.hidden').fadeIn(4000).removeClass('hidden');
+  $('div.hidden').fadeIn(5000).removeClass('hidden');
 
   $('#contact-form').submit(function() {
-    alert("Form submitted, talk to you soon!");
+    alert("Thanks for reaching out, talk to you soon!");
   });
 });
 

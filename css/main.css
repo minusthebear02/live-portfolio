@@ -1,3 +1,7 @@
+.hidden {
+  display: none;
+}
+
 .hero {
   position: relative;
   overflow: hidden;
@@ -268,6 +272,7 @@
 #contact {
   background-color: white;
   color: #5C80BC;
+  min-height: 100vh;
 }
 
 #contact p {
