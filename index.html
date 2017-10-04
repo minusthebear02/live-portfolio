@@ -8,19 +8,6 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
     <link rel="icon" href="./favicon.ico" type="image/icon" />
-    <script type="text/javascript">
-    $(document).ready(function() {
-      $('div.hidden').fadeIn(5000).removeClass('hidden');
-      $('#contact-form').submit(function() {
-        alert("Thanks for reaching out, talk to you soon!");
-      });
-    });
-    function scroll_to_div(div_id) {
-      $('html,body').animate({
-        scrollTop: $("#"+div_id).offset().top - 58
-      }, 'slow');
-    };
-    </script>
   </head>
   <body>
     <div class="hero" id="home">
@@ -55,33 +42,33 @@
         <h3>Developing the web with my bare hands<br />...and some code</h3>
 
         <ul class="hero-skills">
-          <li class="html-icon">
-            <div class="icon hidden img-responsive">
+          <li class="html-icon hidden">
+            <div class="icon img-responsive">
               <img src="assets/html2.png">
             </div>
           </li>
-          <li class="css-icon">
-            <div class="icon hidden img-responsive">
+          <li class="css-icon hidden">
+            <div class="icon img-responsive">
               <img src="assets/css2.png">
             </div>
           </li>
-          <li class="javascript-icon">
-            <div class="icon hidden img-responsive">
+          <li class="javascript-icon hidden">
+            <div class="icon img-responsive">
               <img src="assets/javascript.png">
             </div>
           </li>
-          <li class="angular-icon">
-            <div class="icon hidden img-responsive">
+          <li class="angular-icon hidden">
+            <div class="icon img-responsive">
               <img src="assets/angular.png">
             </div>
           </li>
-          <li class="ruby-icon">
-            <div class="icon hidden img-responsive">
+          <li class="ruby-icon hidden">
+            <div class="icon img-responsive">
               <img src="assets/ruby.png">
             </div>
           </li>
-          <li class="rails-icon">
-            <div class="icon hidden img-responsive">
+          <li class="rails-icon hidden">
+            <div class="icon img-responsive">
               <img src="assets/rails.png">
             </div>
           </li>
@@ -225,5 +212,18 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.hidden').fadeIn(4000).removeClass('hidden').css('display', 'inline');
+        $('#contact-form').submit(function() {
+          alert("Thanks for reaching out, talk to you soon!");
+        });
+      });
+      function scroll_to_div(div_id) {
+        $('html,body').animate({
+          scrollTop: $("#"+div_id).offset().top - 58
+        }, 'slow');
+      };
+    </script>
   </body>
 </html>

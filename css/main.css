@@ -1,6 +1,3 @@
-.hidden {
-  display: none;
-}
 
 .hero {
   position: relative;
@@ -150,7 +147,6 @@
 }
 
 .hero-skills li {
-  display: inline;
   padding: 10px;
 }
 
@@ -159,7 +155,7 @@
   border-radius: 50%;
   height: 95px;
   width: 95px;
-  display: inline-block !important;
+  display: inline-block;
 }
 
 .icon img {
